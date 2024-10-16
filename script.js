@@ -1,20 +1,8 @@
 document.getElementById('showContent').addEventListener('click', function() {
-    fetch('https://github.com/Arwindpianist/Joget-Developer-Offline-Test/blob/a1da74c4d47a6fdac1a692767be25185d298be16/ASSESMENT.md')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            const markdownContent = document.getElementById('markdownContent');
-            markdownContent.innerHTML = marked(data);
-            markdownContent.classList.remove('hidden');
-            markdownContent.classList.add('show');
-        })
-        .catch(error => console.error('Error fetching Markdown:', error));
+    // Redirect to the GitHub assessment branch
+    window.location.href = 'https://github.com/Arwindpianist/Joget-Developer-Offline-Test/tree/assestment';
 });
-
+// Particles.js configuration
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -125,4 +113,3 @@ particlesJS('particles-js', {
     },
     retina_detect: true
 });
-
