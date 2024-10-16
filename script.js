@@ -1,5 +1,5 @@
 document.getElementById('showContent').addEventListener('click', function() {
-    fetch('https://github.com/Arwindpianist/Joget-Developer-Offline-Test/blob/assestment/ASSESMENT.md?plain=1')
+    fetch('https://github.com/Arwindpianist/Joget-Developer-Offline-Test/blob/a1da74c4d47a6fdac1a692767be25185d298be16/ASSESMENT.md')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
